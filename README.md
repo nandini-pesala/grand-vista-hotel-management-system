@@ -195,16 +195,28 @@ Grand-Vista-Hotel-Management-System/
 
 ---
 
-⭐ Main Features
-👨‍💼 Employee Management – Add, assign roles/departments, manage employee details, salary, and search records.
-🏨 Room Management – Manage room numbers, types, prices, availability, occupancy, and status.
-👤 Customer Management – Manage customer information and associate customers with bookings and services.
-📅 Booking Management – Create bookings, allocate rooms, manage check-in/check-out, and track booking status.
-🍽️ Food Order Management – Manage orders through Pending → Preparing → Ready → Delivered with kitchen and room-service operations.
-🧹 Housekeeping Management – Manage cleaning requests from Pending → Started → Completed and track cleaning statistics.
-🔧 Maintenance Management – Manage maintenance issues through Pending → In Progress → Completed and track resolution.
-📊 Manager Dashboard – Monitor revenue, employees, customers, rooms, bookings, food orders, housekeeping, and maintenance.
-📈 Reports & Statistics – Revenue, occupancy, employee performance, food orders, housekeeping, and maintenance reports.
+## 🚀 Main Features
+
+- 👥 **Employee Management** – Add and manage hotel employees, departments, roles, salaries, and employee details.
+- 🏨 **Room Management** – Manage rooms, room types, prices, availability, and occupancy status.
+- 👤 **Customer Management** – Register and manage customer information.
+- 📅 **Booking Management** – Create and manage hotel room bookings.
+- 🛎️ **Check-In & Check-Out** – Manage guest check-in and check-out operations.
+- 🍽️ **Food Order Management** – Place and track food orders through different order statuses.
+- 🧹 **Housekeeping Management** – Manage room cleaning requests and cleaning status.
+- 🔧 **Maintenance Management** – Create, track, start, and resolve maintenance requests.
+- 🛎️ **Room Service Management** – Manage room service requests and delivery operations.
+- 📊 **Manager Dashboard** – View important hotel statistics and operational information.
+- 💰 **Revenue Reports** – View total hotel revenue and revenue summaries.
+- 🛏️ **Occupancy Reports** – Monitor available rooms, occupied rooms, and occupancy percentage.
+- 👨‍💼 **Employee Performance** – View employee details and performance information.
+- 🍴 **Food Statistics** – Monitor pending, preparing, ready, and delivered food orders.
+- 🧹 **Housekeeping Statistics** – Monitor pending and completed cleaning requests.
+- 🔧 **Maintenance Statistics** – Monitor pending and completed maintenance requests.
+- 🔎 **Search & Filtering** – Search employee and operational records efficiently.
+- 🔐 **Role-Based Access** – Provide different dashboards and responsibilities based on employee roles.
+- 🔗 **REST API Integration** – React frontend communicates with the Spring Boot backend using REST APIs.
+- 🗄️ **MySQL Database** – Store and manage hotel data using MySQL with Spring Data JPA/Hibernate.
 
 # 🔄 Role-Based Access
 
@@ -419,35 +431,31 @@ Backend tests are located inside:
 grand-vista-backend/src/test/
 ```
 
----
+## 🚀 Deployment
 
-# 🚀 Deployment
-
-The project can be deployed as separate services:
+The Grand Vista Hotel Management System is deployed as three separate services:
 
 ```text
-React Frontend
-      │
-      ▼
-Frontend Hosting
-      │
-      │ REST API
-      ▼
-Spring Boot Backend
-      │
-      ▼
-Aiven MySQL
+                    Users
+                      │
+                      ▼
+             React Frontend
+                  (Vercel)
+                      │
+                REST API
+                      │
+                      ▼
+            Spring Boot Backend
+                  (Render)
+                      │
+                JDBC / JPA
+                      │
+                      ▼
+               MySQL Database
+                 (Aiven)
 ```
 
 The database can be hosted using Aiven MySQL, while the frontend and backend can be deployed using suitable cloud hosting platforms.
-
----
-
-# 🔐 Security Note
-
-The current application uses **role-based access at the application/UI level** to provide different functionality for different employee roles.
-
-For production deployment, additional authentication and authorization mechanisms such as **Spring Security, password hashing, JWT/session-based authentication, HTTPS, and environment-based secret management** can be added.
 
 ---
 
@@ -462,31 +470,6 @@ The application includes:
 * Dashboard cards.
 * Responsive forms.
 * Responsive report pages.
-
----
-
-# 📸 Screenshots
-
-Add screenshots of your application here.
-
-Example:
-
-```text
-docs/
-├── login.png
-├── admin-dashboard.png
-├── manager-dashboard.png
-├── reception.png
-├── kitchen.png
-├── housekeeping.png
-└── maintenance.png
-```
-
-Then add them to this README using:
-
-```markdown
-![Manager Dashboard](docs/manager-dashboard.png)
-```
 
 ---
 
