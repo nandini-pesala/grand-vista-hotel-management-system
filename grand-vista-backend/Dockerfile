@@ -10,4 +10,4 @@ RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "target/grand-vista-backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/hotel-management-system-0.0.1-SNAPSHOT.jar"]
