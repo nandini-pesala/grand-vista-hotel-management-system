@@ -1,0 +1,12 @@
+:root {
+
+  --primary: #0F172A;
+  --secondary: #FBBF24;
+  --white: #FFFFFF;
+
+}
+
+body {
+  background: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
