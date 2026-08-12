@@ -17,7 +17,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
 
                 registry.addMapping("/**")
-                        .allowedOrigins("grand-vista-hotel-management-system.vercel.app")
+                        .allowedOrigins("https://grand-vista-hotel-management-system.vercel.app")
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }
