@@ -337,20 +337,6 @@ src/main/resources/application.properties
 
 Configure your MySQL database connection.
 
-Example:
-
-```properties
-spring.datasource.url=jdbc:mysql://YOUR_HOST:YOUR_PORT/YOUR_DATABASE?ssl-mode=REQUIRED
-spring.datasource.username=YOUR_USERNAME
-spring.datasource.password=YOUR_PASSWORD
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-```
-
-**Do not commit your real database password to GitHub.**
-
 ---
 
 ## 3. Run Backend
