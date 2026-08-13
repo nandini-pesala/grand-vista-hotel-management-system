@@ -36,6 +36,18 @@ public class PaymentService {
         return paymentRepository.findAll();
     }
 
+    public BigDecimal getRevenue() {
+
+    BigDecimal revenue =
+            paymentRepository.getTotalRevenue();
+
+    if (revenue == null) {
+        return BigDecimal.ZERO;
+    }
+
+    return revenue;
+    }
+
     public Payment makePayment(PaymentDTO dto){
     	
     	Payment existingPayment =
