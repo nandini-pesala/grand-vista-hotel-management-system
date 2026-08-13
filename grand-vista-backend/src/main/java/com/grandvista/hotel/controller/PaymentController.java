@@ -36,6 +36,13 @@ public class PaymentController {
         return paymentService
                 .makePayment(dto);
     }
+
+    @GetMapping("/revenue")
+    public BigDecimal getRevenue() {
+
+        return paymentService.getRevenue();
+
+    }
     
     @GetMapping("/customer/{customerId}")
     public List<Payment>
