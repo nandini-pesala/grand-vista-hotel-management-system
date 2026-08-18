@@ -540,4 +540,4 @@ This project was developed as an academic/personal full-stack project for learni
 
 ## 🌐 Live Demo
 
-🔗 **Hotel Management System:** [View Live Website](https://grand-vista-hotel-management-system.vercel.app/))
+🔗 **Hotel Management System:** [View Live Website](https://grand-vista-hotel-management-system.vercel.app/)
