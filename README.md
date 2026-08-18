@@ -537,3 +537,7 @@ This project was developed as an academic/personal full-stack project for learni
 ## ⭐ Project Summary
 
 **Grand Vista Hotel Management System** is a full-stack hotel management application that integrates a **React.js frontend, Spring Boot REST backend, and MySQL database** to manage hotel operations such as employees, rooms, customers, bookings, food orders, housekeeping, maintenance, and management reports.
+
+## 🌐 Live Demo
+
+🔗 **Hotel Management System:** [View Live Website]((https://grand-vista-hotel-management-system.vercel.app/))
